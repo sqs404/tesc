@@ -24,7 +24,7 @@ Sec-Fetch-Dest: document
 Referer: http://localhost/search-id.php
 Accept-Encoding: gzip, deflate, br
 Cookie: PHPSESSID=pvm9s24kls26lgqj0730spgclj
-Connection: keep-alive```
+Connection: keep-alive
 
 
 
