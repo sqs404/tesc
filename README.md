@@ -1,8 +1,13 @@
 # tesc
-A vulnerability has been discovered in code-projects Matrimonial Site 1.0. The affected file is /view_profile.php?id=1. Modifying the id parameter leads to SQL injection.
+Vulnerability Report: SQL Injection in code-projects Matrimonial Site 1.0
+## Affected Component
+- **File**: `/view_profile.php?id=1`
+- **Vulnerability**: SQL Injection via the `id` parameter.
 
-Captured request packet 1:
+---
 
+## Captured HTTP Request
+```http
 GET /view_profile.php?id=1 HTTP/1.1
 Host: localhost
 sec-ch-ua: "Not?A_Brand";v="99", "Chromium";v="130"
